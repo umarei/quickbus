@@ -1,0 +1,116 @@
+/* frontend/css/styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  main {
+    padding: 1em;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  .auth-links {
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  .btn {
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0.5em;
+    display: inline-block;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+  }
+  
+  .bus-list, .seat-map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .bus-item, .seat {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 0.5em;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .seat {
+    width: 50px;
+    margin: 0.25em;
+    cursor: pointer;
+  }
+  
+  .seat.available {
+    background-color: #28a745;
+  }
+  
+  .seat.selected {
+    background-color: #ffc107;
+  }
+  
+  .seat.unavailable {
+    background-color: #dc3545;
+    cursor: not-allowed;
+  }
+  
+  .logout-btn {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+  
+  @media (max-width: 768px) {
+    .bus-item, .seat {
+      width: 45%;
+    }
+  
+    .seat {
+      width: 40px;
+      padding: 0.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bus-item, .seat {
+      width: 100%;
+    }
+  }
+  
